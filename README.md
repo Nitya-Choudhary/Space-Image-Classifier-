@@ -1,57 +1,50 @@
 # 🌌 NASA APOD Image Dataset for AI & Research
 
 ## 📌 Overview
-
-This repository contains a curated dataset built from NASA’s Astronomy Picture of the Day (APOD) archive.  
-It includes thousands of astronomy images along with structured metadata, designed for use in:
+This project provides a curated dataset built from NASA’s **Astronomy Picture of the Day (APOD)** archive.  
+It contains astronomy images along with structured metadata, designed for use in:
 
 - Machine Learning
 - Computer Vision
 - Natural Language Processing
 - Research Projects
-- Web Applications
-
-The repository also includes scripts to automatically download and structure the dataset.
 
 ---
 
 ## 📂 Dataset Description
 
-The dataset consists of:
+https://www.kaggle.com/datasets/ahsanneural/nasa-astronomy-picture-of-the-day-1995-2026
 
 ### 📄 Metadata (CSV File)
+Each row in the dataset includes:
 
-Each row contains:
+- `date` – Publication date  
+- `title` – Title of the image  
+- `explanation` – Description of the image  
+- `media_type` – Image or video  
+- `url` – Standard resolution URL  
+- `hdurl` – High-resolution image URL  
+- `copyright` – Credits (if available)  
 
-- `date` – Publication date
-- `title` – Title of the image
-- `explanation` – Detailed description
-- `media_type` – Image or video
-- `url` – Standard image/video URL
-- `hdurl` – High-resolution image URL
-- `copyright` – Credit (if applicable)
-
-Only entries with `media_type = image` are used to build the image dataset.
-
----
-
-## 🖼️ Image Content
-
-The images include:
-
-- Galaxies
-- Nebulae
-- Planets
-- Moons
-- Stars
-- Supernovae
-- Milky Way views
-- Deep space telescope imagery
-- Astronomical phenomena
-
-All images originate from NASA APOD archives.
+👉 Only entries with `media_type = image` are used.
 
 ---
 
-## 📁 Project Structure
+### 🖼️ Image Content
+The dataset includes a variety of astronomical objects such as:
+
+- Galaxies  
+- Nebulae  
+- Planets  
+- Moons  
+- Stars  
+- Supernovae  
+- Milky Way views  
+- Deep space imagery  
+
+All images are sourced from NASA APOD.
+
+---
+
+
 
