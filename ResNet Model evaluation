@@ -1,0 +1,96 @@
+# ResNet18 Model Training & Evaluation
+
+## 📌 Overview
+
+This file documents the implementation and evaluation of a ResNet18-based deep learning model trained on the NASA APOD dataset for astronomical image classification.
+
+---
+
+## 🧠 Model Details
+
+* Model: ResNet18 (pretrained on ImageNet)
+* Framework: PyTorch
+* Input Size: 224 × 224
+* Number of Classes: 4
+
+  * Galaxy
+  * Nebula
+  * Planet/Moon
+  * Other
+
+---
+
+## ⚙️ Training Configuration
+
+* Loss Function: CrossEntropyLoss
+* Optimizer: Adam
+* Learning Rate: 0.0005
+* Batch Size: 32
+* Epochs: 5–10
+
+---
+
+## 🔄 Data Pipeline
+
+1. Filter dataset (only image entries)
+2. Remove invalid URLs
+3. Download images from `hdurl`
+4. Clean dataset (remove missing images)
+5. Rename images for indexing consistency
+6. Generate labels from image titles
+7. Train-test split (80-20)
+
+---
+
+## 📊 Evaluation Metrics
+
+The model was evaluated using the following metrics:
+
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* Confusion Matrix
+
+---
+
+## 📈 Results
+
+* Validation Accuracy: ~30%
+* Observation:
+
+  * Model struggles due to weak labeling
+  * Class overlap present in dataset
+  * Performance limited by noisy data
+
+---
+
+## 🔍 Key Insights
+
+* ResNet18 provides a strong baseline for image classification
+* Dataset quality significantly affects performance
+* Labeling based on titles introduces noise and ambiguity
+
+---
+
+## ⚠️ Limitations
+
+* Noisy and weak labels
+* Class imbalance in dataset
+* Limited feature separability between classes
+
+---
+
+## 🚀 Future Improvements
+
+* Use better labeled datasets (e.g., Galaxy Zoo)
+* Improve labeling using NLP techniques
+* Apply advanced models (EfficientNet, Vision Transformers)
+* Use data augmentation for better generalization
+* Implement class balancing techniques
+
+---
+
+## 📌 Conclusion
+
+The ResNet18 model serves as a baseline for astronomical image classification. While the pipeline is robust, performance is limited by dataset quality, highlighting the importance of clean and well-labeled data in deep learning projects.
