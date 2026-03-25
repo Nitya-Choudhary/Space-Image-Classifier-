@@ -14,6 +14,7 @@ It contains astronomy images along with structured metadata, designed for use in
 ## 📂 Dataset Description
 
 https://www.kaggle.com/datasets/ahsanneural/nasa-astronomy-picture-of-the-day-1995-2026
+https://www.kaggle.com/datasets/ahsanneural/nasa-apod-sample-images-100-astronomy-pictures
 
 ### 📄 Metadata (CSV File)
 Each row in the dataset includes:
